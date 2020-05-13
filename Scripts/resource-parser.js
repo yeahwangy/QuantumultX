@@ -111,6 +111,8 @@ if(type0=="Vmess"){
 	flag=0;
 }
 
+$notify(flag);
+
 if(flag==3){
 	$done({content : total.join("\n")});
 }else if(flag==2){
