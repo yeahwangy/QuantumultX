@@ -1,5 +1,5 @@
 /** 
-# Quantumult X 资源解析器 (2020-05-13: 21:38 )
+# Quantumult X 资源解析器 (2020-05-13: 21:45 )
 
 本资源解析器作者: Shawn(请勿私聊问怎么用)，有bug请反馈: @Shawn_KOP_bot
 更新请关注tg频道: https://t.me/QuanX_API
@@ -457,7 +457,7 @@ function TJ2QX(subs,Pudp,Ptfo,Pcert,Ptls13){
 		}
 	}
 	// $notify("转换信息","Trojan", QXList.join("\n"))
-	$notify("转换信息","Trojan", QXList.length)
+	// $notify("转换信息","Trojan", QXList.length)
 	return QXList;
 }
 
