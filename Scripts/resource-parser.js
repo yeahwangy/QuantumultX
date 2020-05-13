@@ -140,7 +140,7 @@ if(flag==3){
 	}
 	
 	if(Pntf0!=0){ 
-		$notify("转换完成","总计: " + total.length, total.join("\n"));	
+		$notify("转换完成", "类型: " + type0 + ", 总计: " + total.length, total.join("\n"));	
 	}
 	
 	$done({content : total.join("\n")});	
@@ -446,11 +446,6 @@ function TJ2QX(subs,Pudp,Ptfo,Pcert,Ptls13){
 			var cnt=list0[i].split("trojan://")[1]
 			type="trojan=";
 			ip=cnt.split("@")[1].split(":443")[0]+":443";
-
-			if(Pntf0!=0){ 
-				$notify(ip);
-			}
-
 			pwd="password="+cnt.split("@")[0];
 			obfs="over-tls=true";
 			pcert= cnt.indexOf("allowInsecure=0")!= -1? "tls-verification=true":"tls-verification=false";
@@ -464,8 +459,6 @@ function TJ2QX(subs,Pudp,Ptfo,Pcert,Ptls13){
 			QXList.push(QX);
 		}
 	}
-	// $notify("转换信息","Trojan", QXList.join("\n"))
-	// $notify("转换信息","Trojan", QXList.length)
 	return QXList;
 }
 
