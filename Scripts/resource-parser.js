@@ -454,7 +454,8 @@ function TJ2QX(subs,Pudp,Ptfo,Pcert,Ptls13){
 			QXList.push(QX);
 		}
 	}
-	$notify("转换信息","Trojan", QXList.join("\n"))
+	// $notify("转换信息","Trojan", QXList.join("\n"))
+	$notify("转换信息","Trojan", QXList.length)
 	return QXList;
 }
 
