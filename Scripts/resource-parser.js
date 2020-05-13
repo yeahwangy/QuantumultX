@@ -445,7 +445,12 @@ function TJ2QX(subs,Pudp,Ptfo,Pcert,Ptls13){
 			var ntrojan=[]
 			var cnt=list0[i].split("trojan://")[1]
 			type="trojan=";
-			ip=cnt.split("@")[1].split("：443")[0]+":443";
+			ip=cnt.split("@")[1].split(":443")[0]+":443";
+
+			if(Pntf0!=0){ 
+				$notify(ip);
+			}
+
 			pwd="password="+cnt.split("@")[0];
 			obfs="over-tls=true";
 			pcert= cnt.indexOf("allowInsecure=0")!= -1? "tls-verification=true":"tls-verification=false";
