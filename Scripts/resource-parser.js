@@ -111,8 +111,6 @@ if(type0=="Vmess"){
 	flag=0;
 }
 
-$notify(flag);
-
 if(flag==3){
 	$done({content : total.join("\n")});
 }else if(flag==2){
@@ -140,6 +138,11 @@ if(flag==3){
 	if(Psort0==1 || Psort0==-1){
 		total=QXSort(total,Psort0);
 	}
+	
+	if(Pntf0!=0){ 
+		$notify("转换完成","总计: " + total.length, total.join("\n"));	
+	}
+	
 	$done({content : total.join("\n")});	
 }else {
 	$done({content : content0});
