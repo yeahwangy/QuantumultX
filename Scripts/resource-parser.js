@@ -1,5 +1,5 @@
 /** 
-# Quantumult X 资源解析器 (2020-05-13: 21:29 )
+# Quantumult X 资源解析器 (2020-05-13: 21:38 )
 
 本资源解析器作者: Shawn(请勿私聊问怎么用)，有bug请反馈: @Shawn_KOP_bot
 更新请关注tg频道: https://t.me/QuanX_API
@@ -58,7 +58,7 @@ var Pcert0=para.indexOf("cert=")!=-1? para.split("#")[1].split("cert=")[1].split
 var Psort0=para.indexOf("sort=")!=-1? para.split("#")[1].split("sort=")[1].split("&")[0].split("+"):0;
 var PTls13=para.indexOf("tls13=")!=-1? para.split("#")[1].split("tls13=")[1].split("&")[0].split("+"):0;
 var Pntf0= para.indexOf("ntf=")!=-1? para.split("#")[1].split("ntf=")[1].split("&")[0].split("+"):0;
-$notify(type0)
+// $notify(type0)
 
 //响应头流量处理部分
 var subinfo=$resource.info;
